@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="homePageBtnAnchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.minecraftserverscontrolpanel.controller.NewserverController">
+   <children>
+      <ImageView id="homePageBtn" fx:id="homePageBtn" accessibleText="go to home page" fitHeight="51.0" fitWidth="52.0" layoutX="526.0" layoutY="14.0" onMousePressed="#onHomePageBtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/closeBtn.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="serverNameText" layoutX="64.0" layoutY="91.0" />
+      <Text layoutX="64.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server name" />
+      <Text fx:id="filepathText" layoutX="64.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Directory selected" wrappingWidth="267.0" />
+      <Text layoutX="64.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the .jar server file" />
+      <Button fx:id="selectMcServerBtn" layoutX="62.0" layoutY="221.0" mnemonicParsing="false" onMousePressed="#onSelectMcServerBtnClicked" text="Select minecraft server directory" />
+      <Button fx:id="addBtn" layoutX="59.0" layoutY="278.0" mnemonicParsing="false" onMousePressed="#onAddBtnClicked" text="Add a Server" />
+   </children>
+</AnchorPane>
